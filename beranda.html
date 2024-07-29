@@ -1,0 +1,170 @@
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link href="beranda.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">My_Website</a>
+            </div>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#audio-video">Audio Video</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#berita">Berita</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="beranda" class="background">
+            <div class="posisi">
+                <h1>Selamat datang! .</h1>
+                <h2>Temukan informasi yang kamu butuhkan di website ini</h2>
+                <p>Mari kita eksplorasi</p>
+                <div class="tombol">
+                    <button onclick="scrollToSection('profil')">Masuk</button>
+                    <button onclick="scrollToSection('berita')">Tampilan Akhir</button>
+                </div>
+            </div>
+        </div>
+        <div id="profil" class="background">
+            <div style="width: 70%; margin: auto; border: 5px solid #eee9e9; padding: 20px; box-shadow: 2px 2px 12px hsla(0, 100%, 100%, 0.895);">
+                <div style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+                    Profil Lengkap Saya
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <div style="flex: 1; border: 1px solid hsl(0, 100%, 100%); height: 300px; display: flex; align-items: center; justify-content: center; margin-right: 20px; overflow: hidden;">
+                        <img src="1786 yunita.jpg" alt="Foto Profil" style="width: 100%; height: auto;">
+                    </div>
+                    <div style="flex: 2;">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>Kampus :</td>
+                                <td>Politeknik Negeri Fakfak</td>
+                            </tr>
+                            <tr>
+                                <td>NIM :</td>
+                                <td>16323007</td>
+                            </tr>
+                            <tr>
+                                <td>Nama :</td>
+                                <td>Yunita Kalang</td>
+                            </tr>
+                            <tr>
+                                <td>Prodi :</td>
+                                <td>DIII Manajemen Informatika</td>
+                            </tr>
+                            <tr>
+                                <td>Kelas :</td>
+                                <td>1A</td>
+                            </tr>
+                            <tr>
+                                <td>JK :</td>
+                                <td>Perempuan</td>
+                            </tr>
+                            <tr>
+                                <td>Gol Darah :</td>
+                                <td>O</td>
+                            </tr>
+                            <tr>
+                                <td>Usia :</td>
+                                <td>19</td>
+                            </tr>
+                            <tr>
+                                <td>Hobi :</td>
+                                <td>Turu</td>
+                            </tr>
+                            <tr>
+                                <td>Ttl :</td>
+                                <td>Fakfak 8 Juni 2005</td>
+                            </tr>
+                            <tr>
+                                <td>Alamat :</td>
+                                <td>Jl.Imam Bonjol</td>
+                            </tr>
+                            <tr>
+                                <td>Status :</td>
+                                <td>Belum Menikah</td>
+                            </tr>
+                            <tr>
+                                <td>Agama :</td>
+                                <td>katolik</td>
+                            </tr>
+                            <tr>
+                                <td>Asal sekolah :</td>
+                                <td>SMA YPK Fakfak</td>
+                            </tr>
+                            <tr>
+                                <td>Cita-cita :</td>
+                                <td>Menjadi orang kaya</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="audio-video" class="background media">
+            <div class="posisi">
+                <h2>Audio Video</h2>
+                <video width="1000" height="400" controls>
+                    <source src="vidiosaya.mp4" type="video/mp4">
+                </video>
+                <audio controls>
+                    <source src="Dress(48k).mp3" type="audio/mp4">
+                </audio>
+            </div>
+        </div>
+        <div id="tentang" class="background">
+            <div class="posisi">
+                <h1>Tentang</h1>
+                <p>Ini adalah bagian tentang penulis.</p>
+                <p align="left">Halo! Nama saya Yunita Kalang, seorang mahasiswa Program Studi DIII Manajemen Informatika.
+                    Saya memiliki minat yang besar dalam bidang teknologi informasi dan manajemen data.
+                    Dengan latar belakang pendidikan di Manajemen Informatika, saya telah memperoleh pengetahuan 
+                    dan keterampilan dalam pengembangan perangkat lunak, analisis data, dan manajemen sistem informasi.</p>
+
+                    <p>Melalui situs ini, saya berharap dapat berbagi pengetahuan, pengalaman, 
+                        serta proyek-proyek yang telah saya kerjakan. Saya juga terbuka untuk berkolaborasi 
+                        dengan profesional lain dalam bidang teknologi dan manajemen informatika.</p>
+
+                        <p>Terima kasih telah mengunjungi situs saya, dan jangan ragu untuk menghubungi 
+                            saya jika ada pertanyaan atau kesempatan kerjasama!</p>
+            </div>
+        </div>
+        <div id="berita" class="background news">
+            <div class="posisi">
+                <h2>Berita</h2>
+                <div class="article">
+                    <h3>Judul Berita 1</h3>
+                    <iframe src="https://www.kompas.com/tag/politeknik-negeri-fakfak" width="100%" height="500px" frameborder="5"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#audiovidio>Audio Video</a></li>
+                <li><a href="tentang">Tentang</a></li>
+                <li><a href="#berita">Berita</a></li>
+            </ul>
+            <p>&copy; 2024 SkYvIn.</p>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
